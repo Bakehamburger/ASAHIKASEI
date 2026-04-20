@@ -28,8 +28,38 @@
  93_超低温
 ------------------------------*/
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .scrollable-mobile-img {
+        min-width: auto;
+    }
+    
+    .formula-box {
+    line-height: 1.4;
+    white-space: nowrap; /* Prevents awkward line breaks in the formula */
+}
 
+/* Add this to your style sheet if the border feels "too tight" on the right */
+.table-responsive > .table {
+    margin-right: 2px; /* Gives the border 2px of breathing room so it doesn't clip */
+}
+    
+}
+/* Unified Mobile Logic (< 576px) */
+@media (max-width: 576px) {
+    .scrollable-mobile-img {
+        min-width: 600px; /* Slightly reduced for a tighter feel on mobile */
+    }
+
+    .mobile-hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        cursor: grab; /* Visual hint for desktop-based mobile testing */
+    }
+
+    .mobile-hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
 @media (hover: hover) {}
 
 /*------------------------------
