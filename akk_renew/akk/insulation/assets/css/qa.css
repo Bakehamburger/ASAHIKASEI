@@ -1,0 +1,139 @@
+h3.qa_head {
+    font-size: 20px;
+    border-left: 2px solid #222222;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+dl.qa dt,
+dl.qa dd {
+    padding-left: 2em;
+    position: relative;
+}
+
+dl.qa dt::before {
+    content: url(../images/qa/faq-q-icon.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+dl.qa dd::before {
+    content: url(../images/qa/faq-a-icon.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+dl.qa dt {
+    border-bottom: 1px solid #222222;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    padding-right: 2em;
+    cursor: pointer
+}
+
+dl.qa dt:not(:first-child) {
+    margin-top: 50px;
+}
+
+dl.qa dd {
+    font-weight: bold;
+}
+
+dl.qa dd {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+dl.qa dd.active {
+    animation-name: fadeDownAnime;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+dl.qa span.pa-plus {
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 0;
+}
+
+dl.qa span.pa-plus::before,
+dl.qa span.pa-plus::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 1px;
+    border-radius: 5px;
+    background: #000000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+dl.qa span.pa-plus::after {
+    transform: translateY(-50%) rotate(90deg);
+    transition: 0.3s;
+}
+
+dl.qa span.pa-plus.active::after {
+    transform: rotate(0);
+    transition: 0.3s;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes fadeDownAnime {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.qa-common-ttl{
+    max-width: 336px;
+}
+
+.faq-link-container {
+    display: block;
+    border: 1px solid #222222;
+    padding: 46px 30px;
+}
+
+.faq-link-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    transition: right .3s;
+}
+
+.product-border-bottom {
+    border-bottom: 1px solid #707070;
+}
+
+@media screen and (min-width: 992px) {
+    .qa-common-ttl{
+        max-width: 450px;
+    }
+}
