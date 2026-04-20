@@ -3,9 +3,68 @@
 /*------------------------------
  89_ドア
 ------------------------------*/
+/* Container for Mobile Scrolling */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* This enables horizontal scrolling on small screens */
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0;
+}
 
+.spec-table {
+  width: 100%;
+  min-width: 600px; /* Forces overflow on mobile devices */
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: #fce4e4; /* Light pink background from image */
+  border: 1px solid #333;
+}
+
+.spec-table th, .spec-table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Header Styles */
+.header-red {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.diagonal-split {
+  background: linear-gradient(to top right, transparent calc(50% - 1px), #333, transparent calc(50% + 1px));
+  width: 150px;
+}
+
+/* Specific Formatting */
+.side-label {
+  width: 100px;
+}
+
+.label {
+  width: 60px;
+  background-color: #fce4e4;
+}
+
+.value {
+  background-color: #fff; /* White background for data cells */
+}
+
+.highlight {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.note {
+  font-size: 12px;
+}
 @media screen and (min-width: 992px) {}
-
+.fire-door-certification {
+  gap: 72px !important;
+}
 @media (hover: hover) {}
 
 /*------------------------------
