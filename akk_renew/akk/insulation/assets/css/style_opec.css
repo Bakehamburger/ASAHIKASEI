@@ -9,10 +9,27 @@
 @media (hover: hover) {}
 
 /*------------------------------
- 90_電気製品
+90_電気製品
 ------------------------------*/
 
-@media screen and (min-width: 992px) {}
+.intro_image-gallery img {
+    max-width: 406px;
+}
+
+
+
+
+/* Swiper */
+.electric_swiper-section h2 {
+    padding-bottom: 16px;
+    line-height: 1.9em;
+    letter-spacing: 0.2em;
+    font-size: 24px;
+}
+
+
+@media screen and (min-width: 992px) {
+}
 
 @media (hover: hover) {}
 
