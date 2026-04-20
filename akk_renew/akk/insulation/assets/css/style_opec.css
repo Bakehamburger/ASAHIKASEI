@@ -61,14 +61,20 @@
 .note {
   font-size: 12px;
 }
-@media screen and (min-width: 992px) {}
+
 .fire-door-certification {
+  gap: 12px !important;
+}
+@media screen and (min-width: 992px) {
+  .fire-door-certification {
   gap: 72px !important;
 }
+}
+
 @media (hover: hover) {}
 
 /*------------------------------
-90_電気製品
+ 90_電気製品
 ------------------------------*/
 
 .intro_image-gallery img {
