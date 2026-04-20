@@ -95,8 +95,27 @@
 /*------------------------------
  92_断熱パネル
 ------------------------------*/
+.section-title {
+    border-bottom: 1px solid #222222;
+}
 
-@media screen and (min-width: 992px) {}
+.external-site-link {
+    color: #222222;
+    text-decoration: underline;
+    text-underline-offset: 8px; 
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+.external-icon{
+    width: 18px;
+    height: 18px;
+}
+
+
+@media screen and (min-width: 992px) {
+}
 
 @media (hover: hover) {}
 
