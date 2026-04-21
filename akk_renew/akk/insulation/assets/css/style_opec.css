@@ -151,71 +151,64 @@
 /*------------------------------
  93_超低温
 ------------------------------*/
-@media screen and (min-width: 992px) {
-    .scrollable-mobile-img {
-        min-width: auto;
+    @media screen and (min-width: 992px) {
+        .scrollable-mobile-img {
+            min-width: auto;
+        }
+        
+        .formula-box {
+        line-height: 1.4;
+        white-space: nowrap; 
     }
-    
-    .formula-box {
-    line-height: 1.4;
-    white-space: nowrap; /* Prevents awkward line breaks in the formula */
-}
 
-/* Add this to your style sheet if the border feels "too tight" on the right */
-.table-responsive > .table {
-    margin-right: 2px; /* Gives the border 2px of breathing room so it doesn't clip */
-}
-
-.custom-border-right {
-    border-right: 1px solid black !important;
-}
-
-.mobile-hide-scrollbar {
-        overflow: hidden !important; /* Disables scrolling in this range */
+    .table-responsive > .table {
+        margin-right: 2px; 
     }
-    
-    .mobile-hide-scrollbar table td, 
-.mobile-hide-scrollbar table th {
-    /* This prevents text from wrapping, forcing the table to stay wide */
-    white-space: nowrap !important; 
-}
 
-    
-}
-/* Unified Mobile Logic (< 576px) */
-@media (max-width: 576px) {
-    .scrollable-mobile-img {
-        min-width: 600px; /* Slightly reduced for a tighter feel on mobile */
-    }
-    
     .custom-border-right {
-    border-right: 1px solid black !important;
-}
-
-
-  .mobile-hide-scrollbar {
-        overflow-x: auto !important; /* Re-enables horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Smooth momentum scroll for iOS */
-        scrollbar-width: none; /* Hides scrollbar for Firefox */
-        -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+        border-right: 1px solid black !important;
     }
 
-    .mobile-hide-scrollbar::-webkit-scrollbar {
-        display: none; /* Hides scrollbar for Chrome/Safari/Brave */
-    }
-
-    /* Ensure the table stays wide enough to trigger the scroll */
-    .mobile-hide-scrollbar table {
-        width: auto !important;
-        min-width: 600px; /* Adjust this to ensure it's wide enough to scroll */
+    .mobile-hide-scrollbar {
+            overflow: hidden !important; 
+        }
+        
+        .mobile-hide-scrollbar table td, 
+    .mobile-hide-scrollbar table th {
+        white-space: nowrap !important; 
     }
     
-    .mobile-hide-scrollbar table td, 
-.mobile-hide-scrollbar table th {
-    /* This prevents text from wrapping, forcing the table to stay wide */
-    white-space: nowrap !important; 
-}
-}
+    }
+
+
+    @media (max-width: 576px) {
+        .scrollable-mobile-img {
+            min-width: 600px; 
+        }
+        
+
+    .mobile-hide-scrollbar {
+            overflow-x: auto !important; 
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; 
+            -ms-overflow-style: none; 
+        }
+
+        .mobile-hide-scrollbar::-webkit-scrollbar {
+            display: none; 
+        }
+
+        .mobile-hide-scrollbar table {
+            width: auto !important;
+            min-width: 600px; 
+        }
+        
+        .mobile-hide-scrollbar table td, 
+        .mobile-hide-scrollbar table th { 
+        border-right: 1px solid black !important;
+        white-space: nowrap !important; 
+    }
+    }
 @media (hover: hover) {}
 
 /*------------------------------
