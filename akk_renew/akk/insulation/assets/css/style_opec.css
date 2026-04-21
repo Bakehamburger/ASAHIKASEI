@@ -16,16 +16,16 @@
     max-width: 406px;
 }
 
-
-
-
-/* Swiper */
-.electric_swiper-section h2 {
-    padding-bottom: 16px;
-    line-height: 1.9em;
-    letter-spacing: 0.2em;
-    font-size: 24px;
+.electric_certification-section h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 8px;
 }
+
+.electric_certification-section h3 {
+  padding-bottom: 8px;
+}
+
+
 
 
 @media screen and (min-width: 992px) {
