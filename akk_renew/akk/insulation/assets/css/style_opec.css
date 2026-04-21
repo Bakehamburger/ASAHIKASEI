@@ -9,36 +9,38 @@
   width: 100%;
 }
 
-/* Container for Mobile Scrolling */
-.table-container {
-  width: 100%;
-  overflow-x: auto; /* This enables horizontal scrolling on small screens */
-  -webkit-overflow-scrolling: touch;
-  margin: 20px 0;
+/* Custom Table Styling */
+.spec-table {
+    border-collapse: collapse;
+    min-width: 800px; /* Ensures table doesn't get too squished */
 }
-
 .spec-table th, .spec-table td {
-  border: 1px solid #333;
-  padding: 8px;
-  text-align: center;
-  vertical-align: middle;
+    border: 1px solid #444 !important;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 8px;
 }
 
-/* Header Styles */
+/* Header Colors */
+.bg-gray-header { background-color: #f2f2f2 !important; font-weight: bold; }
+.bg-red-header { background-color: #c92a1e !important; color: white !important; font-weight: bold; }
+.bg-side-label { background-color: #f9f9f9; }
 
-
-.diagonal-split {
-  background: linear-gradient(to top right, transparent calc(50% - 1px), #333, transparent calc(50% + 1px));
-  width: 150px;
+/* Diagonal Line Cell */
+.diagonal-cell {
+    background: linear-gradient(to top right, #f2f2f2 calc(50% - 1px), #444, #f2f2f2 calc(50% + 1px));
+    padding: 0;
+    width: 180px;
 }
 
-/* Specific Formatting */
-.side-label {
-  width: 100px;
-}
+/* Specific Text Styling */
+.text-red-bold { color: #c92a1e; font-weight: bold; }
+.small-note { font-size: 0.85rem; display: block; margin-top: 5px; }
 
-.label {
-  width: 80px;
+/* Mobile Scroll Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .fire-door-certification {
