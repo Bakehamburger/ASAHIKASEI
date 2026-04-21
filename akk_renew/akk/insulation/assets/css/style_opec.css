@@ -102,11 +102,6 @@
   border-bottom: 1px solid #222222;
 }
 
-.main-section-container{
-  max-width: 885px;
-  margin: 0 auto;
-}
-
 .external-site-link {
   color: #222222;
   text-decoration: underline;
