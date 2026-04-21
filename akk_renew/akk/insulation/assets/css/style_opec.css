@@ -193,6 +193,21 @@
 /*------------------------------
  94_プラント向け
 ------------------------------*/
+.product-title { 
+  letter-spacing: 0.3em; 
+  font-weight: 500; 
+}
+.sub-header { 
+  font-weight: 600; 
+  font-size: 1.25rem; 
+}
+.divider { 
+  border-top: 1px solid #333; 
+  margin-top: 0.5rem; 
+}
+.case-study-title::before {
+  content: "■";
+}
 
 @media screen and (min-width: 992px) {}
 
