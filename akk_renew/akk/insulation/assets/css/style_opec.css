@@ -60,16 +60,34 @@
     max-width: 406px;
 }
 
-
-
-
-/* Swiper */
-.electric_swiper-section h2 {
-    padding-bottom: 16px;
-    line-height: 1.9em;
-    letter-spacing: 0.2em;
-    font-size: 24px;
+.electric_certification-section h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 8px;
+  font-size: 24px;
 }
+
+.electric_certification-section h3 {
+  padding-bottom: 8px;
+}
+
+.intro_image-gallery div:nth-child(1) {
+  padding-bottom: 45px;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .intro_image-gallery div:nth-child(1) {
+  padding-bottom: 0;
+}
+
+.electric_certification-section h2 {
+  font-size: 32px;
+}
+}
+
+
+
 
 
 @media screen and (min-width: 992px) {
@@ -81,21 +99,26 @@
  92_断熱パネル
 ------------------------------*/
 .section-title {
-    border-bottom: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+
+.main-section-container{
+  max-width: 885px;
+  margin: 0 auto;
 }
 
 .external-site-link {
-    color: #222222;
-    text-decoration: underline;
-    text-underline-offset: 8px; 
-    display: inline-flex;
-    align-items: center;
-    transition: opacity 0.2s;
+  color: #222222;
+  text-decoration: underline;
+  text-underline-offset: 8px; 
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s;
 }
 
 .external-icon{
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -107,39 +130,64 @@
 /*------------------------------
  93_超低温
 ------------------------------*/
-
-@media screen and (min-width: 992px) {
-    .scrollable-mobile-img {
-        min-width: auto;
+    @media screen and (min-width: 992px) {
+        .scrollable-mobile-img {
+            min-width: auto;
+        }
+        
+        .formula-box {
+        line-height: 1.4;
+        white-space: nowrap; 
     }
-    
-    .formula-box {
-    line-height: 1.4;
-    white-space: nowrap; /* Prevents awkward line breaks in the formula */
-}
 
-/* Add this to your style sheet if the border feels "too tight" on the right */
-.table-responsive > .table {
-    margin-right: 2px; /* Gives the border 2px of breathing room so it doesn't clip */
-}
-    
-}
-/* Unified Mobile Logic (< 576px) */
-@media (max-width: 576px) {
-    .scrollable-mobile-img {
-        min-width: 600px; /* Slightly reduced for a tighter feel on mobile */
+    .table-responsive > .table {
+        margin-right: 2px; 
+    }
+
+    .custom-border-right {
+        border-right: 1px solid black !important;
     }
 
     .mobile-hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        cursor: grab; /* Visual hint for desktop-based mobile testing */
+            overflow: hidden !important; 
+        }
+        
+        .mobile-hide-scrollbar table td, 
+    .mobile-hide-scrollbar table th {
+        white-space: nowrap !important; 
+    }
+    
     }
 
-    .mobile-hide-scrollbar::-webkit-scrollbar {
-        display: none;
+
+    @media (max-width: 576px) {
+        .scrollable-mobile-img {
+            min-width: 600px; 
+        }
+        
+
+    .mobile-hide-scrollbar {
+            overflow-x: auto !important; 
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; 
+            -ms-overflow-style: none; 
+        }
+
+        .mobile-hide-scrollbar::-webkit-scrollbar {
+            display: none; 
+        }
+
+        .mobile-hide-scrollbar table {
+            width: auto !important;
+            min-width: 600px; 
+        }
+        
+        .mobile-hide-scrollbar table td, 
+        .mobile-hide-scrollbar table th { 
+        border-right: 1px solid black !important;
+        white-space: nowrap !important; 
     }
-}
+    }
 @media (hover: hover) {}
 
 /*------------------------------
