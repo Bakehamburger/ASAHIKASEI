@@ -102,21 +102,26 @@
  92_断熱パネル
 ------------------------------*/
 .section-title {
-    border-bottom: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+
+.main-section-container{
+  max-width: 885px;
+  margin: 0 auto;
 }
 
 .external-site-link {
-    color: #222222;
-    text-decoration: underline;
-    text-underline-offset: 8px; 
-    display: inline-flex;
-    align-items: center;
-    transition: opacity 0.2s;
+  color: #222222;
+  text-decoration: underline;
+  text-underline-offset: 8px; 
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s;
 }
 
 .external-icon{
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 
