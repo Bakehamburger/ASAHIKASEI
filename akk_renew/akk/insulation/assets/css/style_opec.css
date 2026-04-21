@@ -222,10 +222,9 @@
   max-height: 800px;
 }
 
-
 @media screen and (min-width: 992px) {
-  .insultation-image-wrapper img{
-    
+  .insultation-image-container {
+    max-width: 335px;
   }
 
 }
