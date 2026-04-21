@@ -84,11 +84,29 @@
 .electric_certification-section h2 {
   border-bottom: 1px solid #000;
   padding-bottom: 8px;
+  font-size: 24px;
 }
 
 .electric_certification-section h3 {
   padding-bottom: 8px;
 }
+
+.intro_image-gallery div:nth-child(1) {
+  padding-bottom: 45px;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .intro_image-gallery div:nth-child(1) {
+  padding-bottom: 0;
+}
+
+.electric_certification-section h2 {
+  font-size: 32px;
+}
+}
+
 
 
 
