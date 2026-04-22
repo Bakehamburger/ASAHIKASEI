@@ -5,7 +5,7 @@
 ------------------------------*/
 
 .fire-door-certification {
-  height: 224px;
+  height: 30%;
   width: 100%;
 }
 
@@ -44,11 +44,20 @@
 }
 
 .fire-door-certification {
-  gap: 12px !important;
+  gap: 15px !important;
 }
 @media screen and (min-width: 992px) {
   .fire-door-certification {
   gap: 72px !important;
+  height: 42%;
+  width: 100%;
+}
+}
+
+@media screen and (max-width:767px) {
+.fire-door-certification {
+  height: 30%;
+  width: 100%;
 }
 }
 
