@@ -196,14 +196,6 @@
  96_ネオマフォームによる工場プラント向け省エネ化のご提案
 ------------------------------*/
 
-.heat-loss-section h3,
-.insulation-examples-section h3,
-.insulation-material-deterioration-section h3,
-.emission-reduction-simulation-section h3 {
-  border-bottom: 1px solid #000;
-  padding-bottom: 8px;
-}
-
 .energy-consumption-container img{
   max-height: 800px;
 }
