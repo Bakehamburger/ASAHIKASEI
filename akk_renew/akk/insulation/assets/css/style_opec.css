@@ -4,6 +4,7 @@
   89_ドア
 ------------------------------*/
 
+
 .fire-door-certification {
   height: 30%;
   width: 100%;
@@ -18,13 +19,21 @@
     border: 1px solid #444 !important;
     text-align: center;
     vertical-align: middle;
-    padding: 12px 8px;
+    padding: 8px 2px;
 }
 
 /* Header Colors */
-.bg-gray-header { background-color: #f2f2f2 !important; font-weight: bold; }
-.bg-red-header { background-color: #c92a1e !important; color: white !important; font-weight: bold; }
-.bg-side-label { background-color: #f9f9f9; }
+.bg-gray-header { 
+  background-color: #f2f2f2 !important; 
+  font-weight: bold; 
+}
+.bg-red-header { 
+  background-color: #c92a1e !important; 
+  color: white !important; font-weight: bold; 
+}
+.bg-side-label { 
+  background-color: #f9f9f9; 
+}
 
 /* Diagonal Line Cell */
 .diagonal-cell {
@@ -46,6 +55,9 @@
 .fire-door-certification {
   gap: 15px !important;
 }
+
+
+
 @media screen and (min-width: 992px) {
   .fire-door-certification {
   gap: 72px !important;
