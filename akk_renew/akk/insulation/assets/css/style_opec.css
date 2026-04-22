@@ -71,38 +71,12 @@
     max-width: 406px;
 }
 
-.electric_certification-section h2 {
+.bottom-border {
   border-bottom: 1px solid #000;
   padding-bottom: 8px;
-  font-size: 24px;
 }
 
-.electric_certification-section h3 {
-  padding-bottom: 8px;
-}
-
-.intro_image-gallery div:nth-child(1) {
-  padding-bottom: 45px;
-}
-
-
-
-@media screen and (min-width: 992px) {
-  .intro_image-gallery div:nth-child(1) {
-  padding-bottom: 0;
-}
-
-.electric_certification-section h2 {
-  font-size: 32px;
-}
-}
-
-
-
-
-
-@media screen and (min-width: 992px) {
-}
+@media screen and (min-width: 992px) {}
 
 @media (hover: hover) {}
 
@@ -230,14 +204,6 @@
 /*------------------------------
  96_ネオマフォームによる工場プラント向け省エネ化のご提案
 ------------------------------*/
-
-.heat-loss-section h3,
-.insulation-examples-section h3,
-.insulation-material-deterioration-section h3,
-.emission-reduction-simulation-section h3 {
-  border-bottom: 1px solid #000;
-  padding-bottom: 8px;
-}
 
 .energy-consumption-container img{
   max-height: 800px;
