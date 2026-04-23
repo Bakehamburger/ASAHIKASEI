@@ -12,44 +12,58 @@
 
 /* Custom Table Styling */
 .spec-table {
-    border-collapse: collapse;
-    min-width: 800px; /* Ensures table doesn't get too squished */
+  border-collapse: collapse;
+  min-width: 800px;
+  /* Ensures table doesn't get too squished */
 }
-.spec-table th, .spec-table td {
-    border: 1px solid #444 !important;
-    text-align: center;
-    vertical-align: middle;
-    padding: 8px 2px;
+
+.spec-table th,
+.spec-table td {
+  border: 1px solid #444 !important;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 2px;
 }
 
 /* Header Colors */
-.bg-gray-header { 
-  background-color: #f2f2f2 !important; 
-  font-weight: bold; 
+.bg-gray-header {
+  background-color: #f2f2f2 !important;
+  font-weight: bold;
 }
-.bg-red-header { 
-  background-color: #c92a1e !important; 
-  color: white !important; font-weight: bold; 
+
+.bg-red-header {
+  background-color: #c92a1e !important;
+  color: white !important;
+  font-weight: bold;
 }
-.bg-side-label { 
-  background-color: #f9f9f9; 
+
+.bg-side-label {
+  background-color: #f9f9f9;
 }
 
 /* Diagonal Line Cell */
 .diagonal-cell {
-    background: linear-gradient(to top right, #f2f2f2 calc(50% - 1px), #444, #f2f2f2 calc(50% + 1px));
-    padding: 0;
-    width: 180px;
+  background: linear-gradient(to top right, #f2f2f2 calc(50% - 1px), #444, #f2f2f2 calc(50% + 1px));
+  padding: 0;
+  width: 180px;
 }
 
 /* Specific Text Styling */
-.text-red-bold { color: #c92a1e; font-weight: bold; }
-.small-note { font-size: 0.85rem; display: block; margin-top: 5px; }
+.text-red-bold {
+  color: #c92a1e;
+  font-weight: bold;
+}
+
+.small-note {
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 5px;
+}
 
 /* Mobile Scroll Wrapper */
 .table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fire-door-certification {
@@ -60,17 +74,17 @@
 
 @media screen and (min-width: 992px) {
   .fire-door-certification {
-  gap: 72px !important;
-  height: 42%;
-  width: 100%;
-}
+    gap: 72px !important;
+    height: 42%;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:767px) {
-.fire-door-certification {
-  height: 30%;
-  width: 100%;
-}
+  .fire-door-certification {
+    height: 22%;
+    width: 100%;
+  }
 }
 
 @media (hover: hover) {}
@@ -80,7 +94,7 @@
 ------------------------------*/
 
 .intro_image-gallery img {
-    max-width: 406px;
+  max-width: 406px;
 }
 
 .bottom-border {
@@ -102,101 +116,104 @@
 .external-site-link {
   color: #222222;
   text-decoration: underline;
-  text-underline-offset: 8px; 
+  text-underline-offset: 8px;
   display: inline-flex;
   align-items: center;
   transition: opacity 0.2s;
 }
 
-.external-icon{
+.external-icon {
   width: 18px;
   height: 18px;
 }
 
 
-@media screen and (min-width: 992px) {
-}
+@media screen and (min-width: 992px) {}
 
 @media (hover: hover) {}
 
 /*------------------------------
  93_超低温
 ------------------------------*/
-    @media screen and (min-width: 992px) {
-        .scrollable-mobile-img {
-            min-width: auto;
-        }
-        
-        .formula-box {
-        line-height: 1.4;
-        white-space: nowrap; 
-    }
+@media screen and (min-width: 992px) {
+  .scrollable-mobile-img {
+    min-width: auto;
+  }
 
-    .table-responsive > .table {
-        margin-right: 2px; 
-    }
+  .formula-box {
+    line-height: 1.4;
+    white-space: nowrap;
+  }
 
-    .custom-border-right {
-        border-right: 1px solid black !important;
-    }
+  .table-responsive>.table {
+    margin-right: 2px;
+  }
 
-    .mobile-hide-scrollbar {
-            overflow: hidden !important; 
-        }
-        
-        .mobile-hide-scrollbar table td, 
-    .mobile-hide-scrollbar table th {
-        white-space: nowrap !important; 
-    }
-    
-    }
+  .custom-border-right {
+    border-right: 1px solid black !important;
+  }
+
+  .mobile-hide-scrollbar {
+    overflow: hidden !important;
+  }
+
+  .mobile-hide-scrollbar table td,
+  .mobile-hide-scrollbar table th {
+    white-space: nowrap !important;
+  }
+
+}
 
 
-    @media (max-width: 576px) {
-        .scrollable-mobile-img {
-            min-width: 600px; 
-        }
-        
+@media (max-width: 576px) {
+  .scrollable-mobile-img {
+    min-width: 600px;
+  }
 
-    .mobile-hide-scrollbar {
-            overflow-x: auto !important; 
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; 
-            -ms-overflow-style: none; 
-        }
 
-        .mobile-hide-scrollbar::-webkit-scrollbar {
-            display: none; 
-        }
+  .mobile-hide-scrollbar {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
-        .mobile-hide-scrollbar table {
-            width: auto !important;
-            min-width: 800px; 
-        }
-        
-        .mobile-hide-scrollbar table td, 
-        .mobile-hide-scrollbar table th { 
-        border-right: 1px solid black !important;
-        white-space: nowrap !important; 
-    }
-    }
+  .mobile-hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-hide-scrollbar table {
+    width: auto !important;
+    min-width: 800px;
+  }
+
+  .mobile-hide-scrollbar table td,
+  .mobile-hide-scrollbar table th {
+    border-right: 1px solid black !important;
+    white-space: nowrap !important;
+  }
+}
+
 @media (hover: hover) {}
 
 /*------------------------------
  94_プラント向け
 ------------------------------*/
-.product-title { 
-  letter-spacing: 0.3em; 
-  font-weight: 500; 
+.product-title {
+  letter-spacing: 0.3em;
+  font-weight: 500;
 }
-.sub-header { 
-  font-weight: 600; 
-  font-size: 1.25rem; 
+
+.sub-header {
+  font-weight: 600;
+  font-size: 1.25rem;
 }
-.divider { 
-  border-top: 1px solid #333; 
-  margin-top: 0.5rem; 
+
+.divider {
+  border-top: 1px solid #333;
+  margin-top: 0.5rem;
 }
+
 .case-study-title::before {
   content: "■";
 }
@@ -217,7 +234,7 @@
  96_ネオマフォームによる工場プラント向け省エネ化のご提案
 ------------------------------*/
 
-.energy-consumption-container img{
+.energy-consumption-container img {
   max-height: 800px;
 }
 
@@ -237,4 +254,3 @@
 @media screen and (min-width: 992px) {}
 
 @media (hover: hover) {}
-
